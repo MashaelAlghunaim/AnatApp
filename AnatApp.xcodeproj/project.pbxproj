@@ -13,6 +13,13 @@
 		62CACC6A29A78F1E00F7CCEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CACC6929A78F1E00F7CCEB /* Preview Assets.xcassets */; };
 		62CACC6C29A78F1E00F7CCEB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CACC6B29A78F1E00F7CCEB /* Persistence.swift */; };
 		62CACC6F29A78F1E00F7CCEB /* AnatApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62CACC6D29A78F1E00F7CCEB /* AnatApp.xcdatamodeld */; };
+		62FE977D29A790EF00877B8E /* ContactPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE977C29A790EF00877B8E /* ContactPickerView.swift */; };
+		62FE977F29A790FB00877B8E /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE977E29A790FB00877B8E /* ContactRow.swift */; };
+		62FE978129A790FF00877B8E /* ContactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE978029A790FF00877B8E /* ContactsProvider.swift */; };
+		62FE978329A7910500877B8E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE978229A7910500877B8E /* Extentions.swift */; };
+		62FE978529A7910900877B8E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE978429A7910900877B8E /* Settings.swift */; };
+		62FE978B29A7918900877B8E /* MainQuestionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE978A29A7918900877B8E /* MainQuestionPage.swift */; };
+		62FE978D29A7919A00877B8E /* groundingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62FE978C29A7919A00877B8E /* groundingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		62CACC6B29A78F1E00F7CCEB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		62CACC6E29A78F1E00F7CCEB /* AnatApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnatApp.xcdatamodel; sourceTree = "<group>"; };
 		62CACC7029A78F1E00F7CCEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62FE977C29A790EF00877B8E /* ContactPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactPickerView.swift; sourceTree = "<group>"; };
+		62FE977E29A790FB00877B8E /* ContactRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		62FE978029A790FF00877B8E /* ContactsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsProvider.swift; sourceTree = "<group>"; };
+		62FE978229A7910500877B8E /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		62FE978429A7910900877B8E /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		62FE978A29A7918900877B8E /* MainQuestionPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQuestionPage.swift; sourceTree = "<group>"; };
+		62FE978C29A7919A00877B8E /* groundingPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = groundingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,13 @@
 			children = (
 				62CACC6229A78F1C00F7CCEB /* AnatAppApp.swift */,
 				62CACC6429A78F1C00F7CCEB /* ContentView.swift */,
+				62FE978029A790FF00877B8E /* ContactsProvider.swift */,
+				62FE977C29A790EF00877B8E /* ContactPickerView.swift */,
+				62FE978229A7910500877B8E /* Extentions.swift */,
+				62FE978A29A7918900877B8E /* MainQuestionPage.swift */,
+				62FE978C29A7919A00877B8E /* groundingPage.swift */,
+				62FE978429A7910900877B8E /* Settings.swift */,
+				62FE977E29A790FB00877B8E /* ContactRow.swift */,
 				62CACC6629A78F1E00F7CCEB /* Assets.xcassets */,
 				62CACC6B29A78F1E00F7CCEB /* Persistence.swift */,
 				62CACC7029A78F1E00F7CCEB /* Info.plist */,
@@ -145,10 +166,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62FE977D29A790EF00877B8E /* ContactPickerView.swift in Sources */,
 				62CACC6C29A78F1E00F7CCEB /* Persistence.swift in Sources */,
 				62CACC6F29A78F1E00F7CCEB /* AnatApp.xcdatamodeld in Sources */,
+				62FE978D29A7919A00877B8E /* groundingPage.swift in Sources */,
 				62CACC6529A78F1C00F7CCEB /* ContentView.swift in Sources */,
+				62FE978329A7910500877B8E /* Extentions.swift in Sources */,
+				62FE978129A790FF00877B8E /* ContactsProvider.swift in Sources */,
+				62FE978529A7910900877B8E /* Settings.swift in Sources */,
 				62CACC6329A78F1C00F7CCEB /* AnatAppApp.swift in Sources */,
+				62FE977F29A790FB00877B8E /* ContactRow.swift in Sources */,
+				62FE978B29A7918900877B8E /* MainQuestionPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
