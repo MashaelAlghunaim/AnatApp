@@ -13,7 +13,7 @@ struct AnatAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            groundingPage()
+            BreathingView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

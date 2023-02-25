@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D950E629AA44F40034A065 /* Let’sbreath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D950E529AA44F40034A065 /* Let’sbreath.swift */; };
+		26D950E829AA45420034A065 /* BreathingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D950E729AA45420034A065 /* BreathingView.swift */; };
 		62CACC6329A78F1C00F7CCEB /* AnatAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CACC6229A78F1C00F7CCEB /* AnatAppApp.swift */; };
 		62CACC6529A78F1C00F7CCEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CACC6429A78F1C00F7CCEB /* ContentView.swift */; };
 		62CACC6729A78F1E00F7CCEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62CACC6629A78F1E00F7CCEB /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26D950E529AA44F40034A065 /* Let’sbreath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Let’sbreath.swift"; sourceTree = "<group>"; };
+		26D950E729AA45420034A065 /* BreathingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingView.swift; sourceTree = "<group>"; };
 		62CACC5F29A78F1C00F7CCEB /* AnatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62CACC6229A78F1C00F7CCEB /* AnatAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatAppApp.swift; sourceTree = "<group>"; };
 		62CACC6429A78F1C00F7CCEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 			children = (
 				62CACC6229A78F1C00F7CCEB /* AnatAppApp.swift */,
 				62CACC6429A78F1C00F7CCEB /* ContentView.swift */,
+				26D950E529AA44F40034A065 /* Let’sbreath.swift */,
+				26D950E729AA45420034A065 /* BreathingView.swift */,
 				62FE978029A790FF00877B8E /* ContactsProvider.swift */,
 				62FE977C29A790EF00877B8E /* ContactPickerView.swift */,
 				62FE978229A7910500877B8E /* Extentions.swift */,
@@ -169,10 +175,12 @@
 				62FE977D29A790EF00877B8E /* ContactPickerView.swift in Sources */,
 				62CACC6C29A78F1E00F7CCEB /* Persistence.swift in Sources */,
 				62CACC6F29A78F1E00F7CCEB /* AnatApp.xcdatamodeld in Sources */,
+				26D950E629AA44F40034A065 /* Let’sbreath.swift in Sources */,
 				62FE978D29A7919A00877B8E /* groundingPage.swift in Sources */,
 				62CACC6529A78F1C00F7CCEB /* ContentView.swift in Sources */,
 				62FE978329A7910500877B8E /* Extentions.swift in Sources */,
 				62FE978129A790FF00877B8E /* ContactsProvider.swift in Sources */,
+				26D950E829AA45420034A065 /* BreathingView.swift in Sources */,
 				62FE978529A7910900877B8E /* Settings.swift in Sources */,
 				62CACC6329A78F1C00F7CCEB /* AnatAppApp.swift in Sources */,
 				62FE977F29A790FB00877B8E /* ContactRow.swift in Sources */,
