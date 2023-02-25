@@ -17,19 +17,22 @@ struct Settings: View {
     @State var showPicker = false
     @State var selectedContact: CNContact?
     
+    //CalendarView
+    @State var isPrsnt = false
     
     var body: some View {
         
         VStack(alignment: .leading){
             
-            Button {}
-        label: {
+            Button(action: {
+                isPrsnt = true
+            },label:{
             VStack(alignment: .leading){
                 HStack{
                     Image(systemName: "calendar")
                         .font(.title)
                     Text("My History")
-                        .foregroundColor(Color("AC"))
+                        .foregroundColor(Color("Blue"))
                         .font(.title)
                         .fontWeight(.bold)
                 }
@@ -37,7 +40,10 @@ struct Settings: View {
                 Text("keep track of when and what happened")
                     .foregroundColor(.black)
             }
-        }
+        })
+            .fullScreenCover(isPresented: $isPrsnt){
+                CalendarView()
+            }
         .frame(width: 350 , height: 100)
         .background(Color("GrayA"))
         .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
@@ -47,7 +53,7 @@ struct Settings: View {
             
             Text("Settings")
                 .font(.system(size: 24))
-                .foregroundColor(Color("AC"))
+                .foregroundColor(Color("Blue"))
                 .padding(.top)
             
             
@@ -59,7 +65,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "phone")
-                    .foregroundColor(Color("AC"))
+                    .foregroundColor(Color("Blue"))
                     .font(.title2)
                 Text("Speed Dial")
                     .foregroundColor(.black)
@@ -87,7 +93,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "timer")
-                    .foregroundColor(Color("AC"))
+                    .foregroundColor(Color("Blue"))
                     .font(.title2)
                 Text("Breathing timer")
                     .foregroundColor(.black)
@@ -125,7 +131,7 @@ struct Settings: View {
             
             Text("Info")
                 .font(.system(size: 24))
-                .foregroundColor(Color("AC"))
+                .foregroundColor(Color("Blue"))
                 .padding(.top)
             
             
@@ -133,7 +139,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "heart")
-                    .foregroundColor(Color("AC"))
+                    .foregroundColor(Color("Blue"))
                     .font(.title2)
                 Text("Share your breathing with Health")
                     .foregroundColor(.black)
@@ -152,7 +158,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "info.circle")
-                    .foregroundColor(Color("AC"))
+                    .foregroundColor(Color("Blue"))
                     .font(.title2)
                 Text("About us")
                     .foregroundColor(.black)
@@ -177,7 +183,7 @@ struct Settings: View {
                 .font(.system(size: 24))
         }
         .frame(width: 350 , height: 55)
-        .background(Color("AC"))
+        .background(Color("Blue"))
         .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .padding(.vertical, 50)
             
