@@ -28,19 +28,15 @@ struct groundingPage: View {
                         Image(systemName: "gear").resizable().frame(width: 30, height: 30)
                        
                     }
-                    .padding(.leading, -160)
+                    .padding(.leading, -165)
+                    .fullScreenCover(isPresented: $isPrsnt){
+                        Settings()
+                    }
+                    .padding(.top, 18)
                     Spacer()
-                      
-                        
-                        
-                    
-                    
-                    
-                    
+                
                 }
                
-                
-                
                 VStack{
                     Text(mainText).font(.title).foregroundColor(Color("blue")).bold().padding().position(x: 200 ,y: 200)
                     Text(text).font(.title).foregroundColor(Color("blue")).bold().padding().position(x: 200, y: 2)
