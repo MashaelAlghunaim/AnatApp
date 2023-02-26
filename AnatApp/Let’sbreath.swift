@@ -12,7 +12,7 @@ struct Let_sbreath: View {
     var body: some View {
         NavigationView{
             ZStack{
-                Loading()
+                Loading1()
                 VStack(spacing: 10){
                     
                     Button(action: {

@@ -20,29 +20,30 @@ struct groundingPage: View {
             ZStack{
                 
                 VStack(spacing: 10){
-                   
                     
-                    NavigationLink {
-                        Settings()
-                    } label: {
-                        Image(systemName: "gear").resizable().frame(width: 30, height: 30)
-                       
-                    }
-                    .padding(.leading, -165)
-                    .fullScreenCover(isPresented: $isPrsnt){
-                        Settings()
-                    }
-                    .padding(.top, 18)
-                    Spacer()
+                    
+                    
+                    
+                }
                 
-                }
-               
                 VStack{
-                    Text(mainText).font(.title).foregroundColor(Color("blue")).bold().padding().position(x: 200 ,y: 200)
-                    Text(text).font(.title).foregroundColor(Color("blue")).bold().padding().position(x: 200, y: 2)
+                    Text(mainText)
+                        .font(.title)
+                        .foregroundColor(Color("blue"))
+                        .bold()
+                        .position(x: 200 ,y: 200)
+                    Text(text)
+                        .font(.title)
+                        .foregroundColor(Color("blue"))
+                        .bold()
+                        .position(x: 200, y: 5)
                     
+                    Loading1()
+                        .position(x: 200, y: -50)
+
                     
                 }
+                Spacer()
             }
             
             .onAppear(perform: {
