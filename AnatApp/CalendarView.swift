@@ -71,7 +71,7 @@ struct CalendarView: View {
                                         
                                         if dateModel.isToday(date: day){
                                             Capsule()
-                                                .fill(Color("Blue"))
+                                                .fill(Color("blue"))
                                                 .matchedGeometryEffect(id: "CURRENTDAY", in: animation)
                                         }
                                         
@@ -111,7 +111,7 @@ struct CalendarView: View {
                 Image(systemName: "plus")
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color("Blue"), in: Circle())
+                    .background(Color("blue"), in: Circle())
                    
             })
             .padding()
@@ -219,7 +219,7 @@ struct CalendarView: View {
             .padding()
             .hLeading()
             .background(
-                Color("Blue")
+                Color("blue")
                     .cornerRadius(25)
             )
         }
@@ -240,7 +240,7 @@ struct CalendarView: View {
                 Text("My History ")
                     .font(.largeTitle.bold())
                     .padding(.bottom)
-                    .foregroundColor(Color("Blue"))
+                    .foregroundColor(Color("blue"))
                 
                 Text(Date().formatted(date: .abbreviated, time: .omitted))
                     .foregroundColor(.gray)

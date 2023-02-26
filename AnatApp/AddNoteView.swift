@@ -63,7 +63,7 @@ struct AddNoteView: View {
                 
                 
             }
-            .foregroundColor(Color("Blue"))
+            .foregroundColor(Color("blue"))
             .listStyle(.insetGrouped)
             .navigationTitle("Note")
             //.navigationBarTitleDisplayMode(.inline)
@@ -80,7 +80,7 @@ struct AddNoteView: View {
                         Image(systemName: "multiply")
                             .resizable()
                             .frame(width: 20 , height: 20)
-                            .foregroundColor(Color("Blue"))
+                            .foregroundColor(Color("blue"))
                         
                     })
                 }
@@ -111,12 +111,12 @@ struct AddNoteView: View {
                 },label:{
                     Text("Save")
                         .frame(maxWidth: 350 , maxHeight: 48)
-                        
+                        .font(.title)
                     
                 })
                 
                 .foregroundColor(.white)
-                .background(Color("Blue"))
+                .background(Color("blue"))
                 .cornerRadius(10)
                 .padding()
                 .disabled(noteTitle == "" || noteDescription == "" )

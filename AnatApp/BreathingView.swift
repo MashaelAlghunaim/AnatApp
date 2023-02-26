@@ -14,7 +14,7 @@ struct BreathingView: View {
             VStack {
                 Text("Anat")
                     .font(.largeTitle)
-                    .foregroundColor(Color("Blue"))
+                    .foregroundColor(Color("blue"))
                 
             }
             .padding(.top, 380)
@@ -34,7 +34,7 @@ struct Loading : View {
         ZStack{
             ForEach(1...8,id: \.self){index in
                 Circle()
-                                .fill(Color("Blue").gradient.opacity(0.3))
+                                .fill(Color("blue").gradient.opacity(0.3))
                                 .frame(width: 150, height: 150)
                                 .scaleEffect(self.animate ? 1:0)
                                 // 150 / 9 -> 75

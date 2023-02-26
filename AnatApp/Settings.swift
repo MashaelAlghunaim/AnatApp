@@ -32,7 +32,7 @@ struct Settings: View {
                     Image(systemName: "calendar")
                         .font(.title)
                     Text("My History")
-                        .foregroundColor(Color("Blue"))
+                        .foregroundColor(Color("blue"))
                         .font(.title)
                         .fontWeight(.bold)
                 }
@@ -53,7 +53,7 @@ struct Settings: View {
             
             Text("Settings")
                 .font(.system(size: 24))
-                .foregroundColor(Color("Blue"))
+                .foregroundColor(Color("blue"))
                 .padding(.top)
             
             
@@ -65,7 +65,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "phone")
-                    .foregroundColor(Color("Blue"))
+                    .foregroundColor(Color("blue"))
                     .font(.title2)
                 Text("Speed Dial")
                     .foregroundColor(.black)
@@ -93,7 +93,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "timer")
-                    .foregroundColor(Color("Blue"))
+                    .foregroundColor(Color("blue"))
                     .font(.title2)
                 Text("Breathing timer")
                     .foregroundColor(.black)
@@ -131,7 +131,7 @@ struct Settings: View {
             
             Text("Info")
                 .font(.system(size: 24))
-                .foregroundColor(Color("Blue"))
+                .foregroundColor(Color("blue"))
                 .padding(.top)
             
             
@@ -139,7 +139,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "heart")
-                    .foregroundColor(Color("Blue"))
+                    .foregroundColor(Color("blue"))
                     .font(.title2)
                 Text("Share your breathing with Health")
                     .foregroundColor(.black)
@@ -158,7 +158,7 @@ struct Settings: View {
         label: {
             HStack{
                 Image(systemName: "info.circle")
-                    .foregroundColor(Color("Blue"))
+                    .foregroundColor(Color("blue"))
                     .font(.title2)
                 Text("About us")
                     .foregroundColor(.black)
@@ -183,7 +183,7 @@ struct Settings: View {
                 .font(.system(size: 24))
         }
         .frame(width: 350 , height: 55)
-        .background(Color("Blue"))
+        .background(Color("blue"))
         .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .padding(.vertical, 50)
             
