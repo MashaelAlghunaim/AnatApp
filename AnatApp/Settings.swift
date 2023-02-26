@@ -24,6 +24,10 @@ struct Settings: View {
         
         VStack(alignment: .leading){
             
+         
+
+            
+            
             NavigationLink(destination: {
                 CalendarView()
             }, label: {
@@ -49,11 +53,33 @@ struct Settings: View {
             
             
             
-            Text("Settings")
-                .font(.system(size: 24))
-                .foregroundColor(Color("blue"))
-                .padding(.top)
             
+            
+            
+            Text("Settings")
+                .font(.largeTitle)
+                .bold()
+                .foregroundColor(Color("blue"))
+            
+            
+            
+            
+            Button {}
+        label: {
+            HStack{
+                Image(systemName: "heart")
+                    .foregroundColor(Color("blue"))
+                    .font(.title2)
+                Text("Share your breathing with Health")
+                    .foregroundColor(.black)
+                
+            }
+            .padding()
+            
+        }
+        .frame(width: 350 , height: 55, alignment: .leading)
+        .background(Color("GrayA"))
+        .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
             
             
             
@@ -86,70 +112,8 @@ struct Settings: View {
         .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
             
             
-            Button {}
             
-        label: {
-            HStack{
-                Image(systemName: "timer")
-                    .foregroundColor(Color("blue"))
-                    .font(.title2)
-                Text("Breathing timer")
-                    .foregroundColor(.black)
-                    
-                
-            }
-            .padding()
-            
-        }
-        .contextMenu {
-            
-            Button {
-                print("")
-            } label: {
-                Text("4,7,8")
-            }
-            
-            Button {
-                print("")
-            } label: {
-                Text("4,2,4")
-            }
-            
-            Button {
-                print("")
-            } label: {
-                Text("6,3,7")
-            }
-        }
-            
-        .frame(width: 350 , height: 55, alignment: .leading)
-        .background(Color("GrayA"))
-        .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            
-            
-            Text("Info")
-                .font(.system(size: 24))
-                .foregroundColor(Color("blue"))
-                .padding(.top)
-            
-            
-            Button {}
-        label: {
-            HStack{
-                Image(systemName: "heart")
-                    .foregroundColor(Color("blue"))
-                    .font(.title2)
-                Text("Share your breathing with Health")
-                    .foregroundColor(.black)
-                
-            }
-            .padding()
-            
-        }
-        .frame(width: 350 , height: 55, alignment: .leading)
-        .background(Color("GrayA"))
-        .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            
+          
             Button {
                 showSheet = true
             }
