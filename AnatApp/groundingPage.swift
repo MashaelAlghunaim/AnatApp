@@ -20,17 +20,15 @@ struct groundingPage: View {
             ZStack{
                 
                 VStack(spacing: 10){
+                   
                     
-                    Button(action: {
-                        isPrsnt = true
-                    },label:{ Image(systemName: "gear").resizable().frame(width: 30, height: 30)
-                        .foregroundColor(Color("blue"))
-                           
-                    })
-                    .padding(.leading, -160)
-                    .fullScreenCover(isPresented: $isPrsnt){
+                    NavigationLink {
                         Settings()
+                    } label: {
+                        Image(systemName: "gear").resizable().frame(width: 30, height: 30)
+                       
                     }
+                    .padding(.leading, -160)
                     Spacer()
                       
                         

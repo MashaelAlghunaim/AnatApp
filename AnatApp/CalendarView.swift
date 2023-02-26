@@ -241,6 +241,7 @@ struct CalendarView: View {
                     .font(.largeTitle.bold())
                     .padding(.bottom)
                     .foregroundColor(Color("blue"))
+                    .padding()
                 
                 Text(Date().formatted(date: .abbreviated, time: .omitted))
                     .foregroundColor(.gray)

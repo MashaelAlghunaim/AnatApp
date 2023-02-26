@@ -14,11 +14,11 @@ struct MainQuestionPage: View {
         NavigationView{
             ZStack{
                 HStack{
-                    Ellipse().fill(Color("lightBlue")).frame(width: 10, height: 10)
-                    Ellipse().fill(Color("lightBlue")).frame(width: 10, height: 10)
-                    Ellipse().fill(Color("lightBlue")).frame(width: 10, height: 10)
+                    Ellipse().fill(Color("blue")).frame(width: 10, height: 10)
+                    Ellipse().fill(Color("blue")).frame(width: 10, height: 10)
+                    Ellipse().fill(Color("blue")).frame(width: 10, height: 10)
                 }.position(x: 40 , y: 30)
-                Text("Can you count 3 things that you love?").font(.title).foregroundColor(Color("lightBlue")).bold().padding().position(x: 200 ,y: 200)
+                Text("Can you count 3 things that you love?").font(.title).foregroundColor(Color("blue")).bold().padding().position(x: 200 ,y: 200)
                 Spacer()
                 Spacer()
                 Spacer()
@@ -28,13 +28,13 @@ struct MainQuestionPage: View {
                     }
                     label: {
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color("lightBlue"),lineWidth:1)
+                            .stroke(Color("blue"),lineWidth:1)
                             .padding(.horizontal, 100)
                             .frame(width: 250,height: 50)
                             .overlay(
                                 Text("Yes"))
                             .foregroundColor(Color.white)
-                            .background(Color("lightBlue"))
+                            .background(Color("blue"))
                             .cornerRadius(10)
                     } 
                     NavigationLink("", destination:  groundingPage(), isActive: $showGroundingPage)
@@ -44,11 +44,11 @@ struct MainQuestionPage: View {
                         
                         
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color("lightBlue"),lineWidth:1)
+                            .stroke(Color("blue"),lineWidth:1)
                             .frame(width: 250,height: 50)
-                            .foregroundColor(Color("lightBlue"))
+                            .foregroundColor(Color("blue"))
                             .overlay(
-                                Text("No")).foregroundColor(Color("lightBlue"))
+                                Text("No")).foregroundColor(Color("blue"))
                             .cornerRadius(10)
                         
                     }

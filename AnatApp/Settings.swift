@@ -24,26 +24,24 @@ struct Settings: View {
         
         VStack(alignment: .leading){
             
-            Button(action: {
-                isPrsnt = true
-            },label:{
-            VStack(alignment: .leading){
-                HStack{
-                    Image(systemName: "calendar")
-                        .font(.title)
-                    Text("My History")
-                        .foregroundColor(Color("blue"))
-                        .font(.title)
-                        .fontWeight(.bold)
-                }
-                
-                Text("keep track of when and what happened")
-                    .foregroundColor(.black)
-            }
-        })
-            .fullScreenCover(isPresented: $isPrsnt){
+            NavigationLink(destination: {
                 CalendarView()
-            }
+            }, label: {
+                VStack(alignment: .leading){
+                                HStack{
+                                    Image(systemName: "calendar")
+                                        .font(.title)
+                                        .foregroundColor(Color("blue"))
+                                    Text("My History")
+                                        .foregroundColor(Color("blue"))
+                                        .font(.title)
+                                        .fontWeight(.bold)
+                                }
+                
+                                Text("keep track of when and what happened")
+                                    .foregroundColor(.black)
+                            }
+            })
         .frame(width: 350 , height: 100)
         .background(Color("GrayA"))
         .mask(RoundedRectangle(cornerRadius: 10, style: .continuous))
