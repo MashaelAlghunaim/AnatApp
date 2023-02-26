@@ -31,15 +31,15 @@ struct groundingPage: View {
                         .font(.title)
                         .foregroundColor(Color("blue"))
                         .bold()
-                        .position(x: 200 ,y: 200)
+                        .position(x: 200 ,y: 150)
                     Text(text)
                         .font(.title)
                         .foregroundColor(Color("blue"))
                         .bold()
-                        .position(x: 200, y: 5)
+                        .position(x: 200, y: -50)
                     
                     Loading1()
-                        .position(x: 200, y: -50)
+                        .position(x: 200, y: -80)
 
                     
                 }
