@@ -96,7 +96,7 @@ struct Settings: View {
                 
                 Spacer()
                 
-                Text(selectedContact != nil ? "\((selectedContact?.familyName)!) \((selectedContact?.givenName)!)" : "".localized)
+                Text(selectedContact != nil ? "\((selectedContact?.familyName)!) \((selectedContact?.givenName)!)" : "")
             }
             .sheet(isPresented: self.$showPicker) {
                 ContactPickerView(showPicker: self.$showPicker, selectedContact: self.$selectedContact)
