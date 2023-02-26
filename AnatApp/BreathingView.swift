@@ -25,7 +25,7 @@ struct BreathingView: View {
                             .foregroundColor(Color("blue"))
                        
                     }
-                    .offset(x: -150, y: 40)
+                    .offset(x: -150, y: 30)
 //                    Button(action: {
 //                        isPrsnt = true
 //                    },

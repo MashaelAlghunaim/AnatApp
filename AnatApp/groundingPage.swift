@@ -22,7 +22,20 @@ struct groundingPage: View {
                 VStack(spacing: 10){
                     
                     
-                    
+                    Button(action: {
+                        isPrsnt = true
+                    },
+                           label:{
+                        Text( "Done")
+                            .font(.title2)
+                            .bold()
+                            .foregroundColor(Color("blue"))
+                        
+                    })
+                    .offset(x: -150, y: -345)
+                    .fullScreenCover(isPresented: $isPrsnt){
+                       BreathingView()
+                    }
                     
                 }
                 
@@ -40,7 +53,7 @@ struct groundingPage: View {
                     
                     Loading1()
                         .position(x: 200, y: -80)
-
+                    
                     
                 }
                 Spacer()
