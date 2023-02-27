@@ -25,6 +25,7 @@
 		D2240AE129AA50BF006917D4 /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240AE029AA50BF006917D4 /* DynamicFilteredView.swift */; };
 		D2240AE329AA517F006917D4 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240AE229AA517F006917D4 /* CalendarView.swift */; };
 		D2240AE529AA5222006917D4 /* DateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2240AE429AA5222006917D4 /* DateViewModel.swift */; };
+		D2F0589F29AC88D200D78FD3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0589E29AC88D200D78FD3 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D2240AE029AA50BF006917D4 /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
 		D2240AE229AA517F006917D4 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		D2240AE429AA5222006917D4 /* DateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewModel.swift; sourceTree = "<group>"; };
+		D2F0589E29AC88D200D78FD3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				D2240AE029AA50BF006917D4 /* DynamicFilteredView.swift */,
 				D2240AE229AA517F006917D4 /* CalendarView.swift */,
 				D2240AE429AA5222006917D4 /* DateViewModel.swift */,
+				D2F0589E29AC88D200D78FD3 /* SplashScreenView.swift */,
 				62CACC6629A78F1E00F7CCEB /* Assets.xcassets */,
 				62CACC6B29A78F1E00F7CCEB /* Persistence.swift */,
 				62CACC7029A78F1E00F7CCEB /* Info.plist */,
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F0589F29AC88D200D78FD3 /* SplashScreenView.swift in Sources */,
 				D2240AE129AA50BF006917D4 /* DynamicFilteredView.swift in Sources */,
 				62FE977D29A790EF00877B8E /* ContactPickerView.swift in Sources */,
 				D2240AE329AA517F006917D4 /* CalendarView.swift in Sources */,
